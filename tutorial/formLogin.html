@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>
+      this is varified form
+    </title>
+    <script type="text/javascript">
+    function dataEnter(){
+      var name=document.formdet.name.value;
+      var password=document.formdet.pass.value;
+
+      document.write(name+password);
+
+
+    }
+    </script>
+
+    <?php
+      echo "hii";
+    ?>
+  </head>
+  <body>
+    <form name="formdet" method="get" enctype="application/x-www-form-urlencoded">
+    <p>name: <input type="text" name="name">
+      <br>
+    <p>password: <input type="password" name="pass">
+      <input type="submit" name="sumbit" onclick="(dataEnter());">
+    </form>
+  </body>
+</html>
